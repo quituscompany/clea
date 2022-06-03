@@ -1,0 +1,65 @@
+@media only screen and (min-width: 37.5em) {
+   
+
+
+.banner2{
+display: flex;
+gap: -100px;
+flex-flow:row nowrap;
+align-items: center;
+justify-content: center;
+
+
+}
+
+.join{
+display: inline-grid;
+grid-area: join;
+} 
+.grid-container{
+display: flex;
+display:grid; 
+gap:10px;
+grid-template: 
+"header header header" auto
+"chamber chamber chamber " 350px
+"news    news     news" 250px
+/* "two two two" auto */
+"one one one "350px
+"aside aside aside" auto
+"join join join" auto
+"event event weather" auto
+"footer footer footer" auto
+ /1fr 1fr 1fr;
+}
+.aside{
+
+    grid-template-columns:25% 25% 50% ;
+    grid-template-areas:
+    "delivery delivery companies" ;
+
+
+
+} 
+.information{
+padding-left:150px;
+}
+.button{
+margin-top: 200px;
+}
+.location{
+    text-align: left;
+}
+
+.navigation a {
+    
+    font-size: clamp(1.5rem, 2vmin, 1.5rem);
+} 
+
+    three{ display: none;}
+    
+    .title{display: none;}
+}
+
+
+  

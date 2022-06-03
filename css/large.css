@@ -1,0 +1,119 @@
+
+@media only screen and (min-width: 60em){
+    
+    .picture{
+        height:120px;
+        width: 120px;
+    }
+   .grid-container{
+     
+grid-template: 
+   "header header header header" auto
+   "event chamber chamber aside" auto
+   "weather chamber chamber aside"auto
+   "join news news aside"auto
+   /* " two two two two" auto */
+   " one one one one " 720px
+   "footer footer footer footer" auto
+   /1fr 1fr 1fr 1fr;
+   }
+   .header{padding: 0 50px 0 50px;}
+   
+    .strategies{
+        display:table;
+       text-align: center; }    
+    .event,.weather,.join{
+        margin-left: 50px;
+       
+       }
+       
+    .aside{
+           margin-right: 50px;
+           display:grid;
+           grid-template:
+           "delivery"1fr
+           "companies" 1fr
+           "strategies"1fr;
+          
+   }
+   .chamber{background-image: url("https://cdn.glitch.global/e17a5c4c-9caa-43ea-8c7f-92916f26473c/center?v=1654187626108");
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+
+       ;}
+
+       /* .chamber{display: flex;} */
+       .text{
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           /* text-shadow: 2px 2px 2px black,
+           2px 2px 1px black;  */
+           margin-top: 5px;
+           text-align: left;
+           color:rgb(6, 217, 241);
+           font-size:4em;}
+      
+        .button{
+        font-size: 1.25em;
+         margin-left:-150px;
+       margin-top: 200px
+           ;}  
+       .icon2{
+           margin-left:10px ;
+           width:50px;
+       }
+       .banner{
+          
+           /* padding-left: 150px; */
+           /* padding-right: 150px; */
+           flex-flow:row nowrap;
+       }
+       .banner2{
+           padding: 30px 100px 30px 100px;
+       }
+     .icon1{
+         width:50px;
+             
+         }
+     
+
+      /* .signature{
+               border-top: 2px solid grey;
+               font-size: 1em;
+               color: grey;
+              
+            } */
+
+/* 
+      .information{
+           margin-left:200px ; } */
+   
+           .navigation {
+            display: flex;
+            gap:30px
+        }
+        .navigation li {
+            display: block; /* change state in small view */
+            flex: 1 1 auto;
+        }
+        .navigation a {
+            text-align: center;
+            font-size: clamp(1.5em, 2vmin, 1.5rem);
+        }
+        .navigation li:first-child {
+            display: none;
+        }
+    .information{
+               padding-left:300px;
+               
+           }
+    main img{
+     width: 760px;
+     height:  560px;
+    }
+    .cards{
+        padding: 0 50px 0 50px;
+    }
+  .title{display:contents;}
+
+}   
